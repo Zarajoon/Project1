@@ -1,0 +1,320 @@
+/*#header {
+	font-family: sans-serif;
+	font-size: 2em;
+	color: red;
+	position: block;
+
+}
+*/
+body {
+	background-color: #f8e9de;
+	/*width: 1000px;*/
+
+}
+/* 
+#side_bar {
+	width: 100px;
+	margin-left: auto;
+	background-color: #ffffff;
+	position: fixed;
+	height: 600px;
+
+}
+ */
+#framey {
+	width: 940px;
+	height: 740px;
+	border: 30px solid black;
+	background-color: #f1dcc7;
+	margin-left: auto;
+	margin-right: auto;
+/*	margin-top: 5px; */
+}
+
+#baord {
+	background-color: #F3E1BE;
+	border: 2px solid black;
+	margin-top: 10px;
+	width: 798px;
+	height: 598px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 70px;
+}
+
+#night {
+	background-color: #1E2E47;
+	width: 358px;
+	height: 448px;
+	opacity: 0.95;
+	color: #F3E1BE;
+	padding: 70px 100px 80px 340px; 
+	font-family: 'Metamorphous', cursive;
+	font-size: 30px;
+}
+
+#dialog {
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 800px;
+	height: 50px;
+	background-color: #000;
+	border-radius: 7px;
+	font-size:20px; 
+	padding:20px; 
+	text-align:center;
+	font-family: 'Metamorphous', cursive;
+	color: #fff;
+
+}
+
+
+#scene {
+	width: 798px;
+	height: 598px;
+	position: absolute;
+}
+
+.things {
+	position:absolute;
+
+}
+
+#sofa1 {
+	margin-left: 295px;
+	margin-top: 290px;
+}
+
+#door1 {
+	margin-left: 349px;
+	margin-top: 439px;
+	width: 250px;
+	display: none;
+}
+
+#door2 {
+	margin-left: 349px;
+	margin-top: 350px;
+	width: 250px;
+	display: none;
+}
+
+#rug {
+	margin-left: 168px;
+	margin-top: 457px;
+
+}
+
+#lamp {
+	margin-left: 235px;
+	margin-top: 205px;
+	width: 90px;
+	height: auto;
+}
+
+#lamp2 {
+	margin-left: 235px;
+	margin-top: 205px;
+	opacity: 0.5;
+	width: 90px;
+	height: auto;
+}
+
+#sofa2 {
+	margin-left: 7px;
+	margin-top: 305px;
+}
+
+#books {
+	margin-left: 100px;
+	margin-top: 500px;
+
+}
+
+#frame4 {
+	margin-left: 0px;
+	margin-top: 139px;
+}
+
+
+
+#safe1 {
+	margin-left: 40px;
+	margin-top: 150px;
+	width: 80px;
+}
+
+#safe2 {
+	margin-left: 40px;
+	margin-top: 145px;
+	width: 80px;
+	display: none;
+}
+
+
+#frame3 {
+	margin-left: 348px;
+	margin-top: 126px;
+}
+
+#frame2 {
+	margin-left: 414px;
+	margin-top: 193px;
+}
+
+#frame1 {
+	margin-left: 507px;
+	margin-top: 126px;
+}
+
+
+#key {
+	margin-left: 350px;
+	margin-top: 330px;
+	width: 70px;
+	height: auto;
+}
+
+#glass {
+	margin-left: 50px;
+	margin-top: 430px;
+	width: 70px;
+	height: auto;
+}
+
+
+#code {
+	margin-top: 100px;
+	margin-left: 260px;
+	display: none;
+}
+
+#code1 {
+	width: 35px;
+	height: auto;
+	margin-left: 414px;
+	margin-top: 200px;
+}
+
+/* result bar */
+
+
+
+
+#result {
+	margin-top: 71px;
+	width: 100px;
+	height: 600px;
+	background-color: #000;
+	border-bottom-right-radius: 7px;
+	border-top-right-radius: 7px;
+	position: absolute;
+	border: 3px;
+	/*transition: margin-left 1s;
+    -webkit-transition: margin-left 1s;*/
+
+}
+
+#reload1 {
+	background-color: #606060;
+	margin: 10px;
+	width: 40px;
+    border-radius: 40px;
+	float: right;
+	display: block;
+}
+
+
+.objects {
+	width: 40px;
+	height: 70px;
+	margin: 10px;
+	float: right;
+	display: block;
+}
+
+#codenum {
+	/*height: 70px;*/
+	font-family: 'Monofett', cursive;
+	/*padding-bottom:15px;*/ 
+	color:#2c2c2c;
+	text-shadow: 2px 2px #d0c0b3;
+	text-align:right;
+	font-family: 'Monofett', cursive;
+	font-size:30px;
+	line-height:19px;
+}
+
+.objects > img {
+	display: none;
+	width: 100%;
+	height: auto;
+	float: right;
+
+}
+
+
+
+
+
+/* prompt customization */
+
+
+
+
+
+#dialogoverlay{
+	display: none;
+	opacity: .8;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: #FFF;
+	width: 100%;
+	z-index: 10;
+}
+#dialogbox{
+	display: none;
+	position: fixed;
+	background: #000;
+	border-radius:7px; 
+	width:300px;
+	z-index: 10;
+}
+#dialogbox > div {  
+  background:#f1dcc7;  
+  margin:5px; 
+  border-radius:5px;
+}
+#dialogbox > div > #dialogboxhead{  
+  font-size:20px; 
+  padding:20px 10px 0px 10px; 
+  color:#000; 
+  text-align:center;
+  font-family: 'Metamorphous', cursive;
+}
+#dialogbox > div > #dialogboxbody{ 
+  padding:5px; 
+  color:#2c2c2c;
+  text-shadow: 2px 2px #d0c0b3;
+  text-align:center;
+  font-family: 'Monofett', cursive;
+  font-size:40px;
+}
+#dialogbox > div > #dialogboxfoot{ 
+  padding:10px; 
+  text-align:center;
+}
+
+.messbutt {
+  width: 70px;
+  background: rgb(202, 60, 60);
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  border: none;
+}
+
+
+/* End of prompt   */
